@@ -9,31 +9,31 @@
 ## Screenshots
 
 ### Dashboard
-![Dashboard](pgstudio-v4/Images/01_Dashboard.png)
+![Dashboard](Images/01_Dashboard.png)
 *Overview of all stanzas, backup counts, repo sizes, and health status at a glance.*
 
 ### Config Editor
-![Config Editor](pgstudio-v4/Images/02_Config_Editor.png)
+![Config Editor](Images/02_Config_Editor.png)
 *Edit `pgbackrest.conf` directly from the browser.*
 
 ### Stanza Manager
-![Stanza Manager](pgstudio-v4/Images/03_Stanza_Manager.png)
+![Stanza Manager](Images/03_Stanza_Manager.png)
 *Create and delete pgBackRest stanzas with one click.*
 
 ### Backup Manager
-![Backup Manager](pgstudio-v4/Images/04_Backup_Manager.png)
+![Backup Manager](Images/04_Backup_Manager.png)
 *Trigger full, differential, or incremental backups and track job status.*
 
 ### Backup Browser
-![Backup Browser](pgstudio-v4/Images/05_Backup_Browser.png)
+![Backup Browser](Images/05_Backup_Browser.png)
 *Browse the complete backup tree including WAL archive metadata.*
 
 ### Verify Backup
-![Verify Backup](pgstudio-v4/Images/06_Verify_Backup.png)
+![Verify Backup](Images/06_Verify_Backup.png)
 *Run pgBackRest verify and stream the results in real time.*
 
 ### Monitoring
-![Monitoring](pgstudio-v4/Images/07_Monitoring.png)
+![Monitoring](Images/07_Monitoring.png)
 *Per-stanza backup history charts and DB size growth forecasts.*
 
 ---
@@ -84,7 +84,7 @@ Browser  ──►  React UI (port 3000)
 ```bash
 # 1. Clone the repo
 git clone https://github.com/your-org/pgstudio.git
-cd pgstudio/pgstudio-v4
+cd pgstudio
 
 # 2. Start everything (demo mode — no pgBackRest required)
 docker compose up --build -d
@@ -162,7 +162,7 @@ Point Grafana's **JSON datasource** at `http://<pgstudio-host>:8000/api/v1/pgbac
 ## Project Structure
 
 ```
-pgstudio-v4/
+pgstudio/
 ├── agent/
 │   └── pgstudio-agent.py        # Deploy this on the backup server
 ├── backend/
@@ -209,7 +209,6 @@ All components use permissive open-source licenses.
 ## Stopping
 
 ```bash
-cd pgstudio-v4
 docker compose down
 ```
 
@@ -217,4 +216,4 @@ docker compose down
 
 ## License
 
-MIT — see [pgstudio-v4/LICENSE](pgstudio-v4/LICENSE).
+MIT — see [LICENSE](LICENSE).
