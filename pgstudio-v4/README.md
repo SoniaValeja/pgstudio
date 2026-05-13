@@ -1,6 +1,6 @@
 # pgStudio
 
-PostgreSQL Backup Intelligence — a GUI and REST API for monitoring and managing pgBackRest backups.
+PostgreSQL Backup Intelligence —  a GUI and REST API for monitoring and managing pgBackRest backups. It is a vibe-coded tool with the help of Claude and needs code review extensively.
 
 > PoC — currently supports pgBackRest. Designed to be extensible to other tools ( like patroni etc.)
 
