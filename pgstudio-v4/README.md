@@ -2,7 +2,7 @@
 
 PostgreSQL Backup Intelligence — a GUI and REST API for monitoring and managing pgBackRest backups.
 
-> PoC — currently supports pgBackRest. Designed to be extensible to other tools (Barman, pg_dump, etc.)
+> PoC — currently supports pgBackRest. Designed to be extensible to other tools ( like patroni etc.)
 
 ---
 
